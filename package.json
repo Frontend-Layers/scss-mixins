@@ -17,7 +17,7 @@
     "gulp-sourcemaps": "^2.6.5"
   },
   "name": "scss-mixins-npm",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "SCSS Mixins",
   "main": "index.html",
   "repository": "https://github.com/andreymatin/scss-mixins.git",
