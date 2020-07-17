@@ -1,7 +1,32 @@
+/*
+ * Elements
+ * ========================================================================== */
+
+// Offscreen Text
+@mixin offscreen-text {
+  text-indent: -99999px;
+}
+
 // Disable text selection
 @mixin unselectable {
   user-select: none;
 }
+
+// Centered Element
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+}
+
+
+
+/*
+ * Content Blocks
+ * ========================================================================== */
+
 
 // Flex Centering
 @mixin flex-center {
@@ -13,14 +38,10 @@
 // Offscreen Block
 @mixin offscreen {
   position: absolute;
-  left: -9999999px;
-  top: -9999999px;
+  left: -99999px;
+  top: -99999px;
 }
 
-// Offscreen Text
-@mixin offscreen_text {
-  text-indent: -9999999px;
-}
 
 // Link Hover
 @mixin hover ($color, $text-decoration) {
@@ -48,4 +69,87 @@
   }
 
   @include flex-center();
+}
+
+
+/*
+ * Structure
+ * ========================================================================== */
+
+/**
+ * Grid Centering
+ *
+ * @src: https://web.dev/one-line-layouts/
+ */
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+
+/*
+ * Effects
+ * ========================================================================== */
+
+@mixin blur($val) {
+  @if $val {
+    backdrop-filter: blur($val);
+  }
+
+  @else {
+    backdrop-filter: blur(3px);
+  }
+}
+
+
+/*
+ * Media Quires
+ * ========================================================================== */
+
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen) {
+    @content;
+  }
 }

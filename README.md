@@ -34,6 +34,10 @@
 @mixin imposter($offset)
 ```
 
+### Blur Panel
+```scss
+@mixin blur($val) {
+```
 
 
 ## Installation
@@ -57,6 +61,11 @@ npm i scss-mixins-npm --save;
 ```
 
 Part of [html-initial-bundle](https://github.com/andreymatin/html-initial-bundle)
+
+
+## Contributing
+
+For issues, bugs or imporvements please open an [issue](https://github.com/andreymatin/scss-mixins/issues/new)
 
 
 ## GitHub
