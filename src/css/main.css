@@ -2,17 +2,31 @@
  * Elements
  * ========================================================================== */
 /*
+ * Center Elements
+ * ========================================================================== */
+/*
  * Content Blocks
  * ========================================================================== */
 /*
  * Structure
  * ========================================================================== */
+/**
+ * Grid Centering
+ *
+ * @src: https://web.dev/one-line-layouts/
+ */
 /*
  * Effects
  * ========================================================================== */
 /*
  * Media Quires
  * ========================================================================== */
+/**
+ * Forms
+ */
+/**
+ * Floating Label
+ */
 /**
  * Link Test: Hover
  */
@@ -22,9 +36,8 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a:focus, a:active, a:hover {
+a:hover, a:focus, a:active {
   color: red;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

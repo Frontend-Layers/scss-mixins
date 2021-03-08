@@ -13,11 +13,12 @@
     "gulp-open": "^3.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   },
   "name": "scss-mixins-npm",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "SCSS Mixins",
   "main": "index.html",
   "repository": "https://github.com/andreymatin/scss-mixins.git",

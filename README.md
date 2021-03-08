@@ -3,12 +3,34 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-## Mixins List
 
+
+
+## Typography
 
 ### Disable selection
 ```scss
 @mixin unselectable
+```
+
+### Link Hover
+```scss
+@mixin hover
+```
+
+
+
+
+## Center Elements
+
+### Elements Centering
+```scss
+@mixin  center-y
+```
+
+### Horizontal center
+```scss
+@mixin center-x
 ```
 
 ### Flex Centering
@@ -24,15 +46,16 @@
 @mixin offscreen_text {
 ```
 
-### Link Hover
-```scss
-@mixin hover ($color, $text-decoration) {
-```
-
 ### Imposter (centered elements)
 ```scss
 @mixin imposter($offset)
 ```
+
+
+
+
+
+## Effects
 
 ### Blur Panel
 ```scss
@@ -59,6 +82,14 @@ npm i scss-mixins-npm --save;
 ```scss
 @import '../node_modules/scss-mixins-npm/src/scss/scss-mixins';
 ```
+
+or shorter
+
+```scss
+@import 'scss-mixins';
+```
+
+
 
 Part of [html-initial-bundle](https://github.com/andreymatin/html-initial-bundle)
 
