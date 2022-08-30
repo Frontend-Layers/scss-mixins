@@ -5,7 +5,6 @@
 
 
 
-
 ## Typography
 
 ### Disable selection
@@ -17,6 +16,11 @@
 ```scss
 @mixin hover
 ```
+
+```scss
+@mixin hover-all
+```
+
 
 
 
@@ -67,13 +71,13 @@
 
 
 ```
-yarn add scss-mixins-npm;
+yarn add scss-mixins-npm
 ```
 
 or
 
 ```
-npm i scss-mixins-npm --save;
+npm i scss-mixins-npm
 ```
 
 
@@ -88,7 +92,6 @@ or shorter
 ```scss
 @import 'scss-mixins';
 ```
-
 
 
 Part of [html-initial-bundle](https://github.com/andreymatin/html-initial-bundle)
